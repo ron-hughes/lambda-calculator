@@ -21,19 +21,25 @@ function App() {
   // Don't forget to pass the functions (and any additional data needed) to the components as props
   
   // style={{backgroundColor: "blue"}}
-  // Display is missing props.
+ 
+
+  const [calc, setCalc] = useState(0);
+
   return (
     <div className="container">
       <Logo />
-      <Display /> 
+      <Display calc={calc}/> 
     <div className="App">
 
     <div className="mainButtons">
+      <div className="leftNums">
         <Specials />
-      <Numbers />
+      <Numbers setCalc={setCalc}/>
+      </div>
          </div>
+         <div className="rightNums"><Operators /> </div> 
     </div> 
-    <Operators /> 
+   
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
       </div>
   );

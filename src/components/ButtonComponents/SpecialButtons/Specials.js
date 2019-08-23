@@ -11,7 +11,7 @@ const Specials = () => {
   // STEP 2 - add the imported data to state
 
   return (
-    <div>
+    <div className="specStyle">
     
     {spec.map(e => {
       return <SpecialButton key={e} spec={e} />

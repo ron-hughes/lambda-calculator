@@ -1,8 +1,8 @@
 import React from "react";
 
 const OperatorButton = (props) => {
+
   return (
-   
     <div><button className="opButton">{props.ops.char}</button></div>
       
   );

@@ -10,12 +10,18 @@
   .App {
     margin: 0 auto;
     background: #a71d36;
+    display: flex;
+    justify-content: space-around;
   }
 
   .logo{
       width: 100px;
   }
   .disScreen {
+    color: white;
+    text-align: end;
+    padding-right: 20px;
+    font-size: 3rem;
     margin: 0 auto;
     background: black;
     width: 100%;
@@ -46,6 +52,13 @@
        flex-flow: column;
    }
 
+ leftNums {
+    width : 22.25%;
+  }
+  rightNums {
+    width : 72.25%;
+  }
+
   /* BUTTONS COLORS */
 
   .numButton {
@@ -58,8 +71,11 @@
   
   .opButton {
     background: red;
-    border-radius: 50%;
+    border-radius: 360px;
     color: white;
+    width: 70px;
+    height: 70px;
+
   
   }
   
