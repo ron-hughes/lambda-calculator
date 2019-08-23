@@ -25,7 +25,7 @@ function App() {
 
   // onClick={(e) => setCalc(calc * 2) - setCalc
  
-  const [calc, setCalc] = useState(0);
+  const [calc, setCalc] = useState('');
   // setCalc(calc + 1)
 
   return (
