@@ -1,0 +1,74 @@
+.container {
+    margin: 0 auto;
+    background: #a71d36;
+    width: 500px;
+    padding: 35px;
+    /* height: 360px; */
+
+  }
+  
+  .App {
+    margin: 0 auto;
+    background: #a71d36;
+  }
+
+  .logo{
+      width: 100px;
+  }
+  .disScreen {
+    margin: 0 auto;
+    background: black;
+    width: 100%;
+    height: 70px;
+    border-radius: 100px;
+
+}
+
+  /* .Logo {
+      text-align: left;
+  } */
+
+/* BUTTONS POSITIONING */
+
+  .mainButtons {
+      margin: 0 auto;
+      width: 45%;
+  }
+
+  .numStyle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   }    
+
+   .opStyle {
+       display: flex;
+       flex-flow: column;
+   }
+
+  /* BUTTONS COLORS */
+
+  .numButton {
+    background: #1a438f;
+    border-radius: 360px;
+    color: white;
+    width: 70px;
+    height: 70px;
+  }
+  
+  .opButton {
+    background: red;
+    border-radius: 50%;
+    color: white;
+  
+  }
+  
+  .specButton {
+    background: purple;
+    border-radius: 360px;
+    color: white;
+    width: 70px;
+    height: 70px;
+  
+  }
+  

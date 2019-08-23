@@ -11,10 +11,9 @@ const Numbers = () => {
 
   const [num] = useState(numbers)
   // console.log(num)
+
   return (
-    <div>
-      
-  
+    <div className="numStyle">
       {num.map(e => {
         return <NumberButton key={e} num={e} />
       })}

@@ -10,7 +10,7 @@ const Operators = () => {
   const [ops] = useState(operators)
   // STEP 2 - add the imported data to state
   return (
-    <div>
+    <div className="opStyle">
         {ops.map(e => {
         return <OperatorButton ops={e} />
       })}
