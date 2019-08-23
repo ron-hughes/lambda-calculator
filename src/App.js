@@ -9,6 +9,7 @@ import Display from "./components/DisplayComponents/Display"
 
 // Logo has already been provided for you. Do the same for the remaining components
 import Logo from "./components/DisplayComponents/Logo";
+import { tsPropertySignature } from "@babel/types";
 // import Display from 
 
 
@@ -21,20 +22,23 @@ function App() {
   // Don't forget to pass the functions (and any additional data needed) to the components as props
   
   // style={{backgroundColor: "blue"}}
- 
 
+  // onClick={(e) => setCalc(calc * 2) - setCalc
+ 
   const [calc, setCalc] = useState(0);
+  // setCalc(calc + 1)
 
   return (
     <div className="container">
       <Logo />
       <Display calc={calc}/> 
+
     <div className="App">
 
     <div className="mainButtons">
       <div className="leftNums">
         <Specials />
-      <Numbers setCalc={setCalc}/>
+      <Numbers  setCalc={setCalc} calc={calc} />
       </div>
          </div>
          <div className="rightNums"><Operators /> </div> 
@@ -44,5 +48,9 @@ function App() {
       </div>
   );
 }
+// const Button = props => {
+//   return (
+//   <button onClick={ () => props.setCalc(props.calc + 1)} > TEST BUTTON</button> )
+// }
 
 export default App;
