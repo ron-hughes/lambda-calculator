@@ -4,8 +4,11 @@
     width: 300px;
     height: 500px;
     padding: 35px;
-    /* height: 360px; */
-
+    border-radius: 50px;
+    border: 7px solid #000000;
+    box-shadow: 10px 10px 60px 2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 60px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 60px 2px rgba(0,0,0,0.75);
   }
  
     /* GRID DISPLAY */
@@ -13,7 +16,7 @@
     display: grid;
     justify-items: center;
     margin: -20px;
-    grid-template-columns: [col-one] 80px [col-two] 80px [col-three]80px [col-four]150px;
+    grid-template-columns: [col-one] 80px [col-two] 80px [col-three] 80px [col-four]110px;
     grid-template-rows: [row-one]80px [row-two]80px [row-three]80px [row-four]80px [row-five]80px; 
   }
   /* SPECIALS GRID PLACEMENT */
@@ -68,7 +71,8 @@
   .n9{
     grid-column-start: col-one;
     grid-row-start: row-five;
-    grid-row-end: span 2;
+    /* grid-column-end: span col-three; */
+    place-self: center stretch;
   }
   .n10{
     grid-column-start: col-three;
@@ -79,45 +83,14 @@
     grid-column-start: col-four;
     grid-row-start: row-five; 
   }
- 
 
-
-
-
-
-
-  /* BUTTONS POSITIONING */
-
-  .mainButtons {
-    width: 60%;
-    background: blue;
-    justify-content: space-between;
-}
-
-.numStyle {
-  padding: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
- }    
-
- .opStyle {
-     display: flex;
-     flex-flow: column;
- }
-
-
-/* .leftNums {
-  width : 100%
-}
-.rightNums {
-  width : 22.25%;
-} */
-
-
+  .numButton.n9{
+    width: 200%;
+  }
 
   .logo{
       width: 100px;
+      margin-bottom: 10px;
   }
   .disScreen {
     color: white;
@@ -127,34 +100,33 @@
     margin: 0 auto;
     margin-bottom: 40px;
     background: black;
-    width: 90%;
+    width: 100%;
     height: 70px;
     border-radius: 100px;
 
 }
-
-  /* .Logo {
-      text-align: left;
-  } */
-
 
   /* BUTTONS COLORS */
 
   .numButton {
     background: #1a438f;
     border-radius: 360px;
+    border: 2px solid #000000;
     color: white;
     width: 75px;
     height: 70px;
     padding: 10px;
+    font-size: 1.4rem;
   }
   
   .opButton {
     background: red;
     border-radius: 360px;
+    border: 2px solid #000000;
     color: white;
     width: 70px;
     height: 70px;
+    font-size: 1.4rem;
 
   
   }
@@ -162,9 +134,10 @@
   .specButton {
     background: purple;
     border-radius: 360px;
+    border: 2px solid #000000;
     color: white;
     width: 70px;
     height: 70px;
-  
+    font-size: 1.4rem;
   }
   

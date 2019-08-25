@@ -9,7 +9,7 @@ import Display from "./components/DisplayComponents/Display"
 
 // Logo has already been provided for you. Do the same for the remaining components
 import Logo from "./components/DisplayComponents/Logo";
-import { tsPropertySignature } from "@babel/types";
+// import { tsPropertySignature } from "@babel/types";
 // import Display from 
 
 
@@ -25,8 +25,8 @@ function App() {
   
 
   const [calc, setCalc] = useState('');
+  const [addColor, setAddColor] = useState('#000000');
 
-console.log(calc)
 
   return (
     <div className="container">
@@ -36,7 +36,7 @@ console.log(calc)
     <div className="App">
       <Specials setCalc={setCalc} calc={calc} />
       <Numbers setCalc={setCalc} calc={calc}  />
-      <Operators calc={calc} setCalc={setCalc} /> 
+      <Operators calc={calc} setCalc={setCalc} addColor={addColor} setAddColor={setAddColor} /> 
    
     </div> 
    
@@ -47,16 +47,3 @@ console.log(calc)
      
 
 export default App;
-
-
-
-
-    {/* <div className="mainButtons">
-      <div className="leftNums">
-      
-      <Specials />
-      <Numbers setCalc={setCalc} calc={calc}  />
-      
-      </div>
-         </div>
-         <div className="rightNums"><Operators calc={calc} setCalc={setCalc} /> </div>  */}
