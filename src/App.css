@@ -1,7 +1,7 @@
 .container {
     margin: 0 auto;
     background: #a71d36;
-    width: 364px;
+    width: 300px;
     height: 500px;
     padding: 35px;
     /* height: 360px; */
@@ -10,26 +10,13 @@
  
     /* GRID DISPLAY */
   .App {
-    width: 400px;
-    background: purple;
-    display: flex;
-    height: 300px;
-    justify-content: space-around;
-  }
-  /* .specStyle {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: [col-one] 100px [col-two]100px [col-three]100px;
-    grid-template-rows: [row-one]80px; 
-   } */
-
-  .App {
     display: grid;
     justify-items: center;
     margin: -20px;
-    grid-template-columns: [col-one] 100px [col-two]100px [col-three]100px [col-four]100px;
+    grid-template-columns: [col-one] 80px [col-two] 80px [col-three]80px [col-four]150px;
     grid-template-rows: [row-one]80px [row-two]80px [row-three]80px [row-four]80px [row-five]80px; 
   }
+  /* SPECIALS GRID PLACEMENT */
 
   .s0 {
     grid-column-start: col-one;
@@ -41,6 +28,7 @@
     grid-column-start: col-three;
   }
 
+  /* NUMBERS GRID PLACEMENT */
   .n0 {
     grid-column-start: col-one;
     grid-row-start: row-two;
@@ -72,6 +60,24 @@
   .n7{
     grid-column-start: col-two;
     grid-row-start: row-four;
+  }
+  .n8{
+    grid-column-start: col-three;
+    grid-row-start: row-four;
+  }
+  .n9{
+    grid-column-start: col-one;
+    grid-row-start: row-five;
+    grid-row-end: span 2;
+  }
+  .n10{
+    grid-column-start: col-three;
+    grid-row-start: row-five;
+  }
+
+  .o4 {
+    grid-column-start: col-four;
+    grid-row-start: row-five; 
   }
  
 
@@ -119,7 +125,7 @@
     padding-right: 20px;
     font-size: 3rem;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     background: black;
     width: 90%;
     height: 70px;
@@ -138,7 +144,7 @@
     background: #1a438f;
     border-radius: 360px;
     color: white;
-    width: 70px;
+    width: 75px;
     height: 70px;
     padding: 10px;
   }

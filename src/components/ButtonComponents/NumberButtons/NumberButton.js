@@ -4,9 +4,9 @@ const NumberButton = (props) => {
   return (
   <div className={`n${props.id}`}>
     
-  <button className={`numButton n${props.id}`} id={props.num} onClick={() => { 
+  <button className={`numButton n${props.id}`} id={props.num} onClick={(event) => { 
   {
-  if (props.num === '1') 
+  if (props.num === '1' || event.location === 3) 
   { 
     props.setCalc(props.calc + 1)
   }

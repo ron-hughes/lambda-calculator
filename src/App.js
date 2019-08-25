@@ -34,8 +34,9 @@ console.log(calc)
       <Display calc={calc} /> {/* Display number that is in calc and calc2 */}
 
     <div className="App">
-      <Specials />
+      <Specials setCalc={setCalc} calc={calc} />
       <Numbers setCalc={setCalc} calc={calc}  />
+      <Operators calc={calc} setCalc={setCalc} /> 
    
     </div> 
    

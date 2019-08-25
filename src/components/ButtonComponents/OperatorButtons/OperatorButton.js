@@ -3,7 +3,7 @@ import React from "react";
 const OperatorButton = (props) => {
 
   return (
-    <div><button className="opButton" id={props.ops.char} onClick={() => {
+    <div className={`o${props.id}`}><button className="opButton" onClick={() => {
     {if(props.ops.value === '+') {
       props.setCalc(props.calc + ' + ')
     }
