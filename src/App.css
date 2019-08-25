@@ -1,18 +1,114 @@
 .container {
     margin: 0 auto;
     background: #a71d36;
-    width: 500px;
+    width: 364px;
+    height: 500px;
     padding: 35px;
     /* height: 360px; */
 
   }
-  
+ 
+    /* GRID DISPLAY */
   .App {
-    margin: 0 auto;
-    background: #a71d36;
+    width: 400px;
+    background: purple;
     display: flex;
+    height: 300px;
     justify-content: space-around;
   }
+  /* .specStyle {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: [col-one] 100px [col-two]100px [col-three]100px;
+    grid-template-rows: [row-one]80px; 
+   } */
+
+  .App {
+    display: grid;
+    justify-items: center;
+    margin: -20px;
+    grid-template-columns: [col-one] 100px [col-two]100px [col-three]100px [col-four]100px;
+    grid-template-rows: [row-one]80px [row-two]80px [row-three]80px [row-four]80px [row-five]80px; 
+  }
+
+  .s0 {
+    grid-column-start: col-one;
+  }
+  .s1 {
+    grid-column-start: col-two;
+  }
+  .s2 {
+    grid-column-start: col-three;
+  }
+
+  .n0 {
+    grid-column-start: col-one;
+    grid-row-start: row-two;
+  }
+  .n1 {
+    grid-column-start: col-two;
+    grid-row-start: row-two;
+  }
+  .n2{
+    grid-column-start: col-three;
+    grid-row-start: row-two;
+  }
+  .n3{
+    grid-column-start: col-one;
+    grid-row-start: row-three;
+  }
+  .n4{
+    grid-column-start: col-two;
+    grid-row-start: row-three;
+  }
+  .n5{
+    grid-column-start: col-three;
+    grid-row-start: row-three;
+  }
+  .n6{
+    grid-column-start: col-one;
+    grid-row-start: row-four;
+  }
+  .n7{
+    grid-column-start: col-two;
+    grid-row-start: row-four;
+  }
+ 
+
+
+
+
+
+
+  /* BUTTONS POSITIONING */
+
+  .mainButtons {
+    width: 60%;
+    background: blue;
+    justify-content: space-between;
+}
+
+.numStyle {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ }    
+
+ .opStyle {
+     display: flex;
+     flex-flow: column;
+ }
+
+
+/* .leftNums {
+  width : 100%
+}
+.rightNums {
+  width : 22.25%;
+} */
+
+
 
   .logo{
       width: 100px;
@@ -23,8 +119,9 @@
     padding-right: 20px;
     font-size: 3rem;
     margin: 0 auto;
+    margin-bottom: 20px;
     background: black;
-    width: 100%;
+    width: 90%;
     height: 70px;
     border-radius: 100px;
 
@@ -34,30 +131,6 @@
       text-align: left;
   } */
 
-/* BUTTONS POSITIONING */
-
-  .mainButtons {
-      margin: 0 auto;
-      width: 45%;
-  }
-
-  .numStyle {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-   }    
-
-   .opStyle {
-       display: flex;
-       flex-flow: column;
-   }
-
- leftNums {
-    width : 22.25%;
-  }
-  rightNums {
-    width : 72.25%;
-  }
 
   /* BUTTONS COLORS */
 
@@ -67,6 +140,7 @@
     color: white;
     width: 70px;
     height: 70px;
+    padding: 10px;
   }
   
   .opButton {

@@ -2,9 +2,9 @@ import React from "react";
 
 const NumberButton = (props) => {
   return (
-  <div>
+  <div className={`n${props.id}`}>
     
-  <button className="numButton" id={props.num} onClick={() => { 
+  <button className={`numButton n${props.id}`} id={props.num} onClick={() => { 
   {
   if (props.num === '1') 
   { 

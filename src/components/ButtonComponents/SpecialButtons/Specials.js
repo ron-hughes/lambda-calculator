@@ -11,12 +11,13 @@ const Specials = () => {
   // STEP 2 - add the imported data to state
 
   return (
-    <div className="specStyle">
-    
-    {spec.map(e => {
-      return <SpecialButton key={e} spec={e} />
+    // <div className="specStyle">
+    <>
+    {spec.map((e, i) => {
+      return <SpecialButton key={i} id={i} spec={e} />
     })}
-    </div>
+    </>
+    
 
     //   {/* STEP 3 - Use .map() to iterate over your array data and return a button
     //    component matching the name on the provided file. Pass

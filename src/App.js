@@ -22,35 +22,40 @@ function App() {
   // Don't forget to pass the functions (and any additional data needed) to the components as props
   
   // style={{backgroundColor: "blue"}}
+  
 
-  // onClick={(e) => setCalc(calc * 2) - setCalc
- 
   const [calc, setCalc] = useState('');
-  // setCalc(calc + 1)
+
+console.log(calc)
 
   return (
     <div className="container">
       <Logo />
-      <Display calc={calc}/> 
+      <Display calc={calc} /> {/* Display number that is in calc and calc2 */}
 
     <div className="App">
-
-    <div className="mainButtons">
-      <div className="leftNums">
-        <Specials />
-      <Numbers  setCalc={setCalc} calc={calc} />
-      </div>
-         </div>
-         <div className="rightNums"><Operators /> </div> 
+      <Specials />
+      <Numbers setCalc={setCalc} calc={calc}  />
+   
     </div> 
    
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
       </div>
   );
 }
-// const Button = props => {
-//   return (
-//   <button onClick={ () => props.setCalc(props.calc + 1)} > TEST BUTTON</button> )
-// }
+     
 
 export default App;
+
+
+
+
+    {/* <div className="mainButtons">
+      <div className="leftNums">
+      
+      <Specials />
+      <Numbers setCalc={setCalc} calc={calc}  />
+      
+      </div>
+         </div>
+         <div className="rightNums"><Operators calc={calc} setCalc={setCalc} /> </div>  */}

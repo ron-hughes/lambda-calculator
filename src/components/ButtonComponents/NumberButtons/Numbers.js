@@ -13,14 +13,14 @@ const Numbers = (props) => {
   // console.log(num)
 
   return (
-    <div className="numStyle">
+    <>
       {num.map((e, i) => {
-        return <NumberButton key={i} num={e} calc={props.calc} setCalc={props.setCalc} />
+        return <NumberButton key={i} id={i} num={e} calc={props.calc} setCalc={props.setCalc} />
       
       })}
       
     
-    </div>
+    </>
   );
 
 };
