@@ -25,7 +25,6 @@ function App() {
   
 
   const [calc, setCalc] = useState('');
-  const [addColor, setAddColor] = useState('#000000');
 
 
   return (
@@ -36,7 +35,7 @@ function App() {
     <div className="App">
       <Specials setCalc={setCalc} calc={calc} />
       <Numbers setCalc={setCalc} calc={calc}  />
-      <Operators calc={calc} setCalc={setCalc} addColor={addColor} setAddColor={setAddColor} /> 
+      <Operators calc={calc} setCalc={setCalc} /> 
    
     </div> 
    
